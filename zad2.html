@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -101,8 +101,8 @@ document.getElementById('p0').innerHTML =""
 for (;e>=0;){
 document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+( fruits[e] ); 
 e--;}}
-   
 </script>
+
  <script>
 function er6() {
   var g=0;
@@ -127,6 +127,31 @@ e--;}
   
 </script>
 
+<script>
+
+ function er7() {
+  var h=0;
+
+var fruits = ["Яблоко", "Апельсин", "Слива", "банан", "груша"];
+var e=4;
+var taras;
+for (;e>=0;){
+l='i'+e;
+fruits[e]= document.getElementById(l).value;
+e--;}
+e=4;
+document.getElementById('p0').innerHTML =""
+
+for (;e>=0;){
+ 
+  if (fruits[e]% 2 ==1){ 
+   h++;}
+
+e--;}
+ document.getElementById('p0').innerHTML = document.getElementById('p0').innerHTML +" "+h; 
+}
+  
+</script>
 <br>
 <br>
 
@@ -147,6 +172,8 @@ e--;}
 <br>
 <a href="#on" class="button15" onclick="er5()" >Array</a>
 <a href="#on" class="button15" onclick="er6()" >Array2</a>
+<a href="#on" class="button15" onclick="er7()" >Array3</a>
+<a href="#on" class="button15" onclick="er8()" >Array4</a>
 <br>
 
 
