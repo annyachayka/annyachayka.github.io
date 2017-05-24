@@ -89,8 +89,7 @@ a.button15:active {
   box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
 }
 </style>
-
-
+  
 <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -113,6 +112,7 @@ a.button15:active {
       firebase.database().ref("/" + document.getElementById("id_value").value + "/lastname").set(document.getElementById("lastname_value").value);
       firebase.database().ref("/" + document.getElementById("id_value").value + "/footsize").set(document.getElementById("footsize_value").value);
       firebase.database().ref("/" + document.getElementById("id_value").value + "/url").set(document.getElementById("url_value").value);
+      firebase.database().ref("/" + document.getElementById("id_value").value + "/password").set(document.getElementById("password_value").value);
     }
  
     function er2() {
@@ -143,7 +143,7 @@ a.button15:active {
   <input type="text" class="form-control" id="url_value" placeholder="" value="https://pp.userapi.com/c836126/v836126600/3e4d8/qiF0QnHMfX8.jpg" />
   <br>
   <br> password 
-  <input type="password" class="form-control" id="id_value" placeholder="" value="password" />
+  <input type="password" class="form-control" id="password_value" placeholder="" value="password" />
   
   <br>
   <a href="#on" class="button15" onclick="er1()">Добавить </a>
@@ -157,8 +157,7 @@ a.button15:active {
  
   <div id="inf"></div>
  
- 
-</body>
-</html>
+
+
 </body>
 </html>
